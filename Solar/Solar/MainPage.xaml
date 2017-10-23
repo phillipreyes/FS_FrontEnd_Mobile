@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage Title="Login" 
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Solar"
+             x:Class="Solar.MainPage">
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="20, 40, 20, 20"
+                    Android="20, 20, 20, 20"
+                    WinPhone="20, 20, 20, 20" />
+    </ContentPage.Padding>
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand"
+                     HorizontalOptions="FillAndExpand"
+                     Orientation="Vertical"
+                     Spacing="15">
+            <Label x:Name="label" Text="First Solar" HorizontalOptions="Center" FontSize="Large"/>
+            <Entry x:Name="UserName" Placeholder="Username" Completed="UserName_Completed" Keyboard="Text"/>
+            <Entry x:Name="Password" Placeholder="Password" IsPassword="True" Completed="Login_Clicked"/>
+            <Button x:Name="Login" Text="Login" Clicked="Login_Clicked"/>
+            <Label x:Name="Warning"/>
+            <Button x:Name="Forgot" Text="Forgot Password?" Clicked="Forgot_Clicked"/>
+            <Button x:Name="Create" Text="Request Account" Clicked="Create_Clicked"/>
+        </StackLayout>
+            </ContentPage.Content>
+
+</ContentPage>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage Title="Request Account"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Solar.RequestAccount">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Fill in the information to request an account" />
+            <Entry x:Name="FirstName" Placeholder="First Name" />
+            <Entry x:Name="LastName" Placeholder="Last Name"/>
+            <Entry x:Name="Email" Placeholder="Email" Keyboard="Email"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,2 @@
+C:\Users\gojor\documents\visual studio 2017\Projects\Solar\Solar\Solar.UWP\Solar.UWP.csproj;x86
+C:\Users\gojor\documents\visual studio 2017\Projects\Solar\Solar\Solar\Solar.csproj;neutral
