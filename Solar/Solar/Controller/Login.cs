@@ -13,6 +13,7 @@ namespace Solar.Controller
 {
     class Login
     {
+        //test
         HttpClient client;
         private UserClass User;
         private List<PlantDTO> PlantItems;
