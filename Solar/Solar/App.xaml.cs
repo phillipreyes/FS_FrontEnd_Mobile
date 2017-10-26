@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Solar.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,7 @@ namespace Solar
         private const string PlantKey = "currentPlantKey";
 
         public string usercross = "";
+        public List<PlantInfo> PlantListKey = new List<PlantInfo>();
 
         public App()
         {
@@ -67,5 +69,15 @@ namespace Solar
                 Properties[PlantKey] = value;
             }
         }
+        /* public List<PlantInfo> PlantList
+        {
+            get
+            {
+                if (Properties.ContainsKey(PlantListKey.ToString()))
+                    return Properties[PlantListKey];
+                return null;
+            }
+
+        }*/
     }
 }

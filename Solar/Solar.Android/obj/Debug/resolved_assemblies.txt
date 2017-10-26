@@ -22,6 +22,7 @@ C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\
 C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\Solar\Solar.Android\obj\Debug\android\assets\System.dll
 C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\Solar\Solar.Android\obj\Debug\android\assets\System.IO.Compression.dll
 C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\Solar\Solar.Android\obj\Debug\android\assets\System.Net.Http.dll
+C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\Solar\Solar.Android\obj\Debug\android\assets\System.Web.Services.dll
 C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\Solar\Solar.Android\obj\Debug\android\assets\System.Xml.dll
 C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\Solar\Solar.Android\obj\Debug\android\assets\System.Xml.Linq.dll
 C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\Solar\Solar.Android\obj\Debug\android\assets\Solar.dll

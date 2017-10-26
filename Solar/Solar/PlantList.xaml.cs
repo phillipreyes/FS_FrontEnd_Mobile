@@ -19,13 +19,13 @@ namespace Solar
             
             var plantNames = new List<PlantInfo>
             {
-                new PlantInfo {name = "First Plant", id = "temp"},
-                new PlantInfo {name = "Second Plant", id = "temp"},
-                new PlantInfo {name = "Third Plant"}
+                new PlantInfo {PlantName = "First Plant", Id = "temp"},
+                new PlantInfo {PlantName = "Second Plant", Id = "temp"},
+                new PlantInfo {PlantName = "Third Plant", Id = "temp3"}
             };
 
             var app = Application.Current as App;
-            plantNames.Add(new PlantInfo { name = app.Username });
+            plantNames.Add(new PlantInfo { PlantName = app.Username });
 
             Plants.ItemsSource = plantNames;
         }
@@ -36,7 +36,7 @@ namespace Solar
                 return;
             var app = Application.Current as App;
             var plant = e.SelectedItem as PlantInfo;
-            app.CurrentPlant = plant.name;
+            app.CurrentPlant = plant.PlantName;
             await Navigation.PushAsync(new PlantView(plant));
             Plants.SelectedItem = null;
         }

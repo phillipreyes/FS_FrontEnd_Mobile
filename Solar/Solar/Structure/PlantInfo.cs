@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Solar.Model
+namespace Solar.Structure
 {
-    class UserClass
+    class PlantInfo
     {
-        public string Email { get; set; }
-        public string password { get; set; }
-
+        public string Id { get; set; }
+        public string PlantName { get; set; }
     }
 }

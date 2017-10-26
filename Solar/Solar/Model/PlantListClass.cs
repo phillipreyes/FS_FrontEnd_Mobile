@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Solar.Model
 {
-    class PlantDTO
+    public class PlantListClass
     {
-        public string Id { get; set; }
-        public string PlantName { get; set; }
-        
+        public List<PlantInfo> PlantName { get; set; }
     }
 }
-

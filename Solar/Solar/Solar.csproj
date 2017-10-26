@@ -42,8 +42,9 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Model\PlantDTO.cs" />
-    <Compile Include="Model\UserClass.cs" />
+    <Compile Include="Model\PlantInfo.cs" />
+    <Compile Include="Model\PlantListClass.cs" />
+    <Compile Include="Model\User.cs" />
     <Compile Include="PlantList.xaml.cs">
       <DependentUpon>PlantList.xaml</DependentUpon>
     </Compile>
@@ -54,7 +55,7 @@
     <Compile Include="RequestAccount.xaml.cs">
       <DependentUpon>RequestAccount.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Structures\PlantInfo.cs" />
+    <Compile Include="Structure\PlantInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainPage.xaml">
@@ -96,6 +97,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
