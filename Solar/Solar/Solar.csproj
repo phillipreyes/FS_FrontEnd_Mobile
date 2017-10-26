@@ -44,6 +44,7 @@
     </Compile>
     <Compile Include="Model\PlantInfo.cs" />
     <Compile Include="Model\PlantListClass.cs" />
+    <Compile Include="Model\TokenDTO.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="PlantList.xaml.cs">
       <DependentUpon>PlantList.xaml</DependentUpon>
