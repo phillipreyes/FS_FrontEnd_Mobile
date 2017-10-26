@@ -26,13 +26,6 @@ C:\Users\gojor\documents\visual studio 2017\Projects\Solar\Solar\Solar\bin\Debug
 C:\Users\gojor\documents\visual studio 2017\Projects\Solar\Solar\Solar\bin\Debug\System.Net.Http.Primitives.xml
 C:\Users\gojor\documents\visual studio 2017\Projects\Solar\Solar\Solar\obj\Debug\Solar.csproj.App.config
 C:\Users\gojor\documents\visual studio 2017\Projects\Solar\Solar\Solar\obj\Debug\Solar.RequestAccount.xaml.g.cs
-C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\Solar\Solar\obj\Debug\Solar.csproj.App.config
-C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\Solar\Solar\obj\Debug\Solar.csproj.CoreCompileInputs.cache
-C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\Solar\Solar\obj\Debug\Solar.MainPage.xaml.g.cs
-C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\Solar\Solar\obj\Debug\Solar.App.xaml.g.cs
-C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\Solar\Solar\obj\Debug\Solar.PlantList.xaml.g.cs
-C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\Solar\Solar\obj\Debug\Solar.PlantView.xaml.g.cs
-C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\Solar\Solar\obj\Debug\Solar.RequestAccount.xaml.g.cs
 C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\Solar\Solar\bin\Debug\Solar.dll.config
 C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\Solar\Solar\bin\Debug\Solar.dll
 C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\Solar\Solar\bin\Debug\Solar.pdb
@@ -49,9 +42,15 @@ C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\
 C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\Solar\Solar\bin\Debug\System.Net.Http.Primitives.xml
 C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\Solar\Solar\bin\Debug\Xamarin.Forms.Core.pdb
 C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\Solar\Solar\bin\Debug\Xamarin.Forms.Core.xml
-C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\Solar\Solar\bin\Debug\Xamarin.Forms.Platform.pdb
 C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\Solar\Solar\bin\Debug\Xamarin.Forms.Xaml.pdb
 C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\Solar\Solar\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\Solar\Solar\obj\Debug\Solar.csproj.App.config
+C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\Solar\Solar\obj\Debug\Solar.csprojResolveAssemblyReference.cache
+C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\Solar\Solar\obj\Debug\Solar.csproj.CoreCompileInputs.cache
+C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\Solar\Solar\obj\Debug\Solar.MainPage.xaml.g.cs
+C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\Solar\Solar\obj\Debug\Solar.App.xaml.g.cs
+C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\Solar\Solar\obj\Debug\Solar.PlantList.xaml.g.cs
+C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\Solar\Solar\obj\Debug\Solar.PlantView.xaml.g.cs
+C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\Solar\Solar\obj\Debug\Solar.RequestAccount.xaml.g.cs
 C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\Solar\Solar\obj\Debug\Solar.dll
 C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\Solar\Solar\obj\Debug\Solar.pdb
-C:\Users\Reyes\Dropbox\School\2017 2Fall\CSE 486 Capstone 2\Project\Solar\Solar\Solar\Solar\obj\Debug\Solar.csprojResolveAssemblyReference.cache

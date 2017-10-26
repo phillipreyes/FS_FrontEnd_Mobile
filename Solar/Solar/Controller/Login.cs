@@ -24,86 +24,25 @@ namespace Solar.Controller
             User = user;
             client = new HttpClient();
         }
-        public async Task<List<PlantInfo>> TryLogin()
+        public  List<PlantInfo> TryLogin()
         {
-            /*
-            Debug.WriteLine("tryindg login!");
-            PlantItems = new List<PlantDTO>();
-            string jsonData = JsonConvert.SerializeObject(User);
-            var uri = new Uri(string.Format("http://fsadminweb.azurewebsites.net/api/PlantApi/plants", string.Empty));
-            Debug.WriteLine("try");
-            try
-            {
-               
-                var response = await client.GetAsync(uri);
-                
-                if (response.IsSuccessStatusCode)
-                {
-                   
-                   var content = await response.Content.ReadAsStringAsync();
-                   List<PlantDTO> PlantItems = JsonConvert.DeserializeObject<List<PlantDTO>>(content);
-                    foreach (var id in PlantItems)
-                    {
-                        Debug.WriteLine(id.Id + " " + id.PlantName);
-                    }
-                    
-                }
-
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine(@"				ERROR {0}", ex.Message);
-            }
-
-            return PlantItems;
-            */
-             /* Debug.WriteLine("trying login!");
-              PlantItems = new List<PlantInfo>();
-              string jsonData = JsonConvert.SerializeObject(User);
-              Debug.WriteLine(jsonData);
-              var uri = new Uri(string.Format("http://fsdevweb.azurewebsites.net/api/account/authenticate/", string.Empty));
-              Debug.WriteLine("------try---------");
-              try
-              {
-                  var content = new StringContent(jsonData, Encoding.UTF8, "application/json");
-
-                  var response = await client.PostAsync(uri, content);
-                  Debug.WriteLine("-------------before status code------------");
-                Debug.WriteLine(response);
-                Debug.WriteLine(response.IsSuccessStatusCode);
-                  if (response.IsSuccessStatusCode)
-                  {
-                      Debug.WriteLine("================after status code=============");
-                      var recieved = await response.Content.ReadAsStringAsync();
-                      List<PlantInfo> PlantItems = JsonConvert.DeserializeObject<List<PlantInfo>>(recieved);
-                      foreach (var id in PlantItems)
-                      {
-                          Debug.WriteLine(id.Id + " " + id.PlantName);
-                      }
-
-                  }
-
-              }
-              catch (Exception ex)
-              {
-                  Debug.WriteLine(@"				ERROR {0}", ex.Message);
-              }
-            */
+          
             Debug.WriteLine("trying login!");
             PlantItems = new List<PlantInfo>();
             //string jsonData = JsonConvert.SerializeObject(User);
             //Debug.WriteLine(jsonData);
-            var uri = new Uri(string.Format("http://fsdevweb.azurewebsites.net/api/account/authenticate", string.Empty));
+            //var uri = new Uri(string.Format("http://fsdevweb.azurewebsites.net/api/account/authenticate", string.Empty));
+            var uri = "http://fsdevweb.azurewebsites.net/api/account/authenticate";
             Debug.WriteLine("------try---------");
             try
             {
                 //var content = new StringContent(jsonData, Encoding.UTF8, "application/json");
-                HttpClient client1 = new HttpClient();
+                
                
                 var prms = new List<KeyValuePair<string, string>>
                     {
                         
-                        new KeyValuePair<string, string>("email", "testuser1@fsweb.com"),
+                        new KeyValuePair<string, string>("username", "testuser1@fsweb.com"),
                         new KeyValuePair<string, string>("password", "P@ssw0rd"),
                         new KeyValuePair<string, string>("grant_type", "password")
                     };
@@ -112,21 +51,28 @@ namespace Solar.Controller
                 //parameters["text"] = text;
 
                 Debug.WriteLine(prms.ToString());
-                var response = await client1.PostAsync(uri, new FormUrlEncodedContent(prms));
+                var response = client.PostAsync(uri, new FormUrlEncodedContent(prms)).Result;
+
                 Debug.WriteLine("-------------before status code------------");
                 Debug.WriteLine(response);
-               // if (response.IsSuccessStatusCode)
-               // /{
+                Debug.WriteLine("");
+                
+                
+                if (response.IsSuccessStatusCode)
+                {
                     Debug.WriteLine("================after status code=============");
-                    var recieved = await response.Content.ReadAsStringAsync();
-                    Debug.WriteLine(recieved);
+                    var result = JsonConvert.DeserializeObject<TokenDTO>(response.Content.ReadAsStringAsync().Result);
+                    Debug.WriteLine("access_token : " + result.access_token + "\ntoken_ type : " + result.token_type + "\nexpires_in : " + result.expires_in +
+                    "\nuserName : " + result.userName + "\n.issued : " + result.issued + "\n.expires : " + result.expires);
+                    //var recieved = await response.Content.ReadAsStringAsync();
+                    //Debug.WriteLine(recieved);
                     //List<PlantInfo> PlantItems = JsonConvert.DeserializeObject<List<PlantInfo>>(recieved);
-                   /* foreach (var id in PlantItems)
-                    {
-                        Debug.WriteLine(id.Id + " " + id.PlantName);
-                    }*/
+                    /* foreach (var id in PlantItems)
+                     {
+                         Debug.WriteLine(id.Id + " " + id.PlantName);
+                     }*/
 
-               // }
+                }
 
            }
             catch (Exception ex)

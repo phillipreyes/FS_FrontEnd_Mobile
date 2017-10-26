@@ -78,13 +78,13 @@ namespace Solar
                 Login log = new Login(user);
 
                 List<PlantInfo> plantlist = new List<PlantInfo>();
-                plantlist = await log.TryLogin();
+                plantlist = log.TryLogin();
                 var app = Application.Current as App;
                 app.PlantListKey = plantlist;
 
                 app.Username = UserName.Text;
                 await Application.Current.SavePropertiesAsync();
-                PlantList plant = new PlantList();
+               // PlantList plant = new PlantList();
                 await Navigation.PushAsync(new PlantList());
             }
             else
