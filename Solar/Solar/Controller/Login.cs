@@ -24,9 +24,11 @@ namespace Solar.Controller
             User = user;
             client = new HttpClient();
         }
-        public  List<PlantInfo> TryLogin()
+        public async Task<bool> TryLogin()
         {
-          
+            //return authenication to be returned. 
+            bool isAuth = false;
+            
             Debug.WriteLine("trying login!");
             PlantItems = new List<PlantInfo>();
             //string jsonData = JsonConvert.SerializeObject(User);
@@ -42,8 +44,8 @@ namespace Solar.Controller
                 var prms = new List<KeyValuePair<string, string>>
                     {
                         
-                        new KeyValuePair<string, string>("username", "testuser1@fsweb.com"),
-                        new KeyValuePair<string, string>("password", "P@ssw0rd"),
+                        new KeyValuePair<string, string>("username", User.email),
+                        new KeyValuePair<string, string>("password", User.password),
                         new KeyValuePair<string, string>("grant_type", "password")
                     };
                
@@ -51,7 +53,7 @@ namespace Solar.Controller
                 //parameters["text"] = text;
 
                 Debug.WriteLine(prms.ToString());
-                var response = client.PostAsync(uri, new FormUrlEncodedContent(prms)).Result;
+                var response =  await client.PostAsync(uri, new FormUrlEncodedContent(prms));
 
                 Debug.WriteLine("-------------before status code------------");
                 Debug.WriteLine(response);
@@ -60,17 +62,12 @@ namespace Solar.Controller
                 
                 if (response.IsSuccessStatusCode)
                 {
+                    isAuth = true;
                     Debug.WriteLine("================after status code=============");
                     var result = JsonConvert.DeserializeObject<TokenDTO>(response.Content.ReadAsStringAsync().Result);
                     Debug.WriteLine("access_token : " + result.access_token + "\ntoken_ type : " + result.token_type + "\nexpires_in : " + result.expires_in +
                     "\nuserName : " + result.userName + "\n.issued : " + result.issued + "\n.expires : " + result.expires);
-                    //var recieved = await response.Content.ReadAsStringAsync();
-                    //Debug.WriteLine(recieved);
-                    //List<PlantInfo> PlantItems = JsonConvert.DeserializeObject<List<PlantInfo>>(recieved);
-                    /* foreach (var id in PlantItems)
-                     {
-                         Debug.WriteLine(id.Id + " " + id.PlantName);
-                     }*/
+                    
 
                 }
 
@@ -79,9 +76,9 @@ namespace Solar.Controller
             {
                 Debug.WriteLine(@"				ERROR {0}", ex.Message);
             }
-            
 
-            return PlantItems;
+            Debug.WriteLine("returning ");
+            return isAuth;
         }
     }
     
