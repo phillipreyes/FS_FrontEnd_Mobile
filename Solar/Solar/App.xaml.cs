@@ -14,7 +14,7 @@ namespace Solar
         private const string PlantKey = "currentPlantKey";
 
         public string usercross = "";
-        public List<PlantInfo> PlantListKey = new List<PlantInfo>();
+        //public List<PlantInfo> PlantListKey = new List<PlantInfo>();
 
         public App()
         {
@@ -69,6 +69,7 @@ namespace Solar
                 Properties[PlantKey] = value;
             }
         }
+       
         /* public List<PlantInfo> PlantList
         {
             get

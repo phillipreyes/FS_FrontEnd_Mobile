@@ -9,7 +9,7 @@
             <DataTemplate>
                 <ViewCell>
                     <StackLayout Padding="10" VerticalOptions="Fill">
-                        <Label Text="{Binding name}" FontSize="Large" />
+                        <Label Text="{Binding PlantName}" FontSize="Large" />
                     </StackLayout>
                 </ViewCell>
             </DataTemplate>

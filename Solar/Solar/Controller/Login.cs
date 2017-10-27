@@ -19,21 +19,22 @@ namespace Solar.Controller
         private User User;
         //private List<PlantDTO> PlantItems;
         private List<PlantInfo> PlantItems;
+        private TokenDTO tokenobj;
         public Login(User user)
         {
             User = user;
             client = new HttpClient();
+            tokenobj = new TokenDTO();
         }
-        public async Task<bool> TryLogin()
+        public async Task<Tuple<TokenDTO, bool>> TryLogin()
         {
             //return authenication to be returned. 
+
+            
             bool isAuth = false;
             
             Debug.WriteLine("trying login!");
-            PlantItems = new List<PlantInfo>();
-            //string jsonData = JsonConvert.SerializeObject(User);
-            //Debug.WriteLine(jsonData);
-            //var uri = new Uri(string.Format("http://fsdevweb.azurewebsites.net/api/account/authenticate", string.Empty));
+            
             var uri = "http://fsdevweb.azurewebsites.net/api/account/authenticate";
             Debug.WriteLine("------try---------");
             try
@@ -64,9 +65,9 @@ namespace Solar.Controller
                 {
                     isAuth = true;
                     Debug.WriteLine("================after status code=============");
-                    var result = JsonConvert.DeserializeObject<TokenDTO>(response.Content.ReadAsStringAsync().Result);
-                    Debug.WriteLine("access_token : " + result.access_token + "\ntoken_ type : " + result.token_type + "\nexpires_in : " + result.expires_in +
-                    "\nuserName : " + result.userName + "\n.issued : " + result.issued + "\n.expires : " + result.expires);
+                   tokenobj = JsonConvert.DeserializeObject<TokenDTO>(response.Content.ReadAsStringAsync().Result);
+                    Debug.WriteLine("access_token : " + tokenobj.access_token + "\ntoken_ type : " + tokenobj.token_type + "\nexpires_in : " + tokenobj.expires_in +
+                    "\nuserName : " + tokenobj.userName + "\n.issued : " + tokenobj.issued + "\n.expires : " + tokenobj.expires);
                     
 
                 }
@@ -78,7 +79,7 @@ namespace Solar.Controller
             }
 
             Debug.WriteLine("returning ");
-            return isAuth;
+            return new Tuple<TokenDTO, bool>(tokenobj, isAuth);
         }
     }
     

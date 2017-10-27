@@ -22,7 +22,7 @@ namespace Solar
 
             var app = Application.Current as App;
             //ContentPage.TitleProperty = app.CurrentPlant;
-            SelectedPlant.Text = app.CurrentPlant;
+            SelectedPlant.Text = info.Id;
         }
     }
 }

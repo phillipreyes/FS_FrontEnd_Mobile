@@ -29,7 +29,7 @@ namespace Solar
         
         private async void Login_Clicked(object sender, EventArgs e)
         {
-
+            Tuple<TokenDTO, bool> tokenobj ;
             User user = new User();
             /*user.email = "testuser1@fsweb.com";
             user.password = "P@ssw0rd";
@@ -43,9 +43,9 @@ namespace Solar
             // List<PlantInfo> plantlist = new List<PlantInfo>();
            
               //login n  
-            isAuthen =  await log.TryLogin();
+                tokenobj =  await log.TryLogin();
             Debug.WriteLine("returned = " + isAuthen);
-            if (isAuthen)
+            if (tokenobj.Item2)
             {
                 Login.IsEnabled = true;      
                 Warning.Text = "";
@@ -56,7 +56,7 @@ namespace Solar
                 app.Username = UserName.Text;
                 await Application.Current.SavePropertiesAsync();
                 // PlantList plant = new PlantList();
-                await Navigation.PushAsync(new PlantList());
+                await Navigation.PushAsync(new PlantList(tokenobj.Item1));
              
             }
             else
