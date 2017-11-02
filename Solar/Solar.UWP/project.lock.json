@@ -26512,19 +26512,19 @@
     "UAP,Version=v10.0.10586": []
   },
   "packageFolders": {
-    "C:\\Users\\Reyes\\.nuget\\packages\\": {}
+    "C:\\Users\\gojor\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\Reyes\\Dropbox\\School\\2017 2Fall\\CSE 486 Capstone 2\\Project\\Solar\\Solar\\Solar\\Solar.UWP\\Solar.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\gojor\\Source\\Repos\\FS_FrontEnd_Mobile2\\Solar\\Solar.UWP\\Solar.UWP.csproj",
       "projectName": "Solar.UWP",
-      "projectPath": "C:\\Users\\Reyes\\Dropbox\\School\\2017 2Fall\\CSE 486 Capstone 2\\Project\\Solar\\Solar\\Solar\\Solar.UWP\\Solar.UWP.csproj",
-      "projectJsonPath": "C:\\Users\\Reyes\\Dropbox\\School\\2017 2Fall\\CSE 486 Capstone 2\\Project\\Solar\\Solar\\Solar\\Solar.UWP\\project.json",
-      "packagesPath": "C:\\Users\\Reyes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Reyes\\Dropbox\\School\\2017 2Fall\\CSE 486 Capstone 2\\Project\\Solar\\Solar\\Solar\\Solar.UWP\\obj\\",
+      "projectPath": "C:\\Users\\gojor\\Source\\Repos\\FS_FrontEnd_Mobile2\\Solar\\Solar.UWP\\Solar.UWP.csproj",
+      "projectJsonPath": "C:\\Users\\gojor\\Source\\Repos\\FS_FrontEnd_Mobile2\\Solar\\Solar.UWP\\project.json",
+      "packagesPath": "C:\\Users\\gojor\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gojor\\Source\\Repos\\FS_FrontEnd_Mobile2\\Solar\\Solar.UWP\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
-        "C:\\Users\\Reyes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gojor\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "sources": {
@@ -26534,8 +26534,8 @@
       "frameworks": {
         "uap10.0.10586": {
           "projectReferences": {
-            "C:\\Users\\Reyes\\Dropbox\\School\\2017 2Fall\\CSE 486 Capstone 2\\Project\\Solar\\Solar\\Solar\\Solar\\Solar.csproj": {
-              "projectPath": "C:\\Users\\Reyes\\Dropbox\\School\\2017 2Fall\\CSE 486 Capstone 2\\Project\\Solar\\Solar\\Solar\\Solar\\Solar.csproj"
+            "C:\\Users\\gojor\\Source\\Repos\\FS_FrontEnd_Mobile2\\Solar\\Solar\\Solar.csproj": {
+              "projectPath": "C:\\Users\\gojor\\Source\\Repos\\FS_FrontEnd_Mobile2\\Solar\\Solar\\Solar.csproj"
             }
           }
         }

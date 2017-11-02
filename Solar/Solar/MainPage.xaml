@@ -17,12 +17,11 @@
                      Orientation="Vertical"
                      Spacing="15">
             <Label x:Name="label" Text="First Solar" HorizontalOptions="Center" FontSize="Large"/>
-            <Entry x:Name="UserName" Placeholder="Username" Completed="UserName_Completed" Keyboard="Text"/>
+            <Entry x:Name="UserName" Placeholder="Username" Completed="UserName_Completed" Keyboard="Email"/>
             <Entry x:Name="Password" Placeholder="Password" IsPassword="True" Completed="Login_Clicked"/>
             <Button x:Name="Login" Text="Login" Clicked="Login_Clicked"/>
             <Label x:Name="Warning"/>
             <Button x:Name="Forgot" Text="Forgot Password?" Clicked="Forgot_Clicked"/>
-            <Button x:Name="Create" Text="Request Account" Clicked="Create_Clicked"/>
         </StackLayout>
             </ContentPage.Content>
 
