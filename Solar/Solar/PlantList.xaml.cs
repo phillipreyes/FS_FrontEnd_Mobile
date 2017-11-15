@@ -23,21 +23,21 @@ namespace Solar
         public PlantList(TokenDTO userInfo)
         {   
             InitializeComponent();
-           //BindingContext = Application.Current;
+            BindingContext = Application.Current;
             
-           /* var plantNames = new List<PlantInfo>
+            
+            var plantNames = new List<PlantInfo>
             {
                 new PlantInfo {PlantName = "First Plant", Id = "temp"},
                 new PlantInfo {PlantName = "Second Plant", Id = "temp"},
                 new PlantInfo {PlantName = "Third Plant", Id = "temp3"}
-            };*/
+            };
             
-           userTokenInfo = userInfo;
+            userTokenInfo = userInfo;
             Title = "Plant List";                    
-            var app = Application.Current as App;
-            //plantNames.Add(new PlantInfo { PlantName = app.Username });
-
-                    }
+            // var app = Application.Current as App;
+            // plantNames.Add(new PlantInfo { PlantName = app.Username });            
+        }
         protected override void OnAppearing()
         {
             GetPlantList getplantInfo = new GetPlantList(userTokenInfo);
@@ -61,10 +61,7 @@ namespace Solar
             var plant = e.SelectedItem as PlantInfo;
             app.CurrentPlant = plant.PlantName;
             await Navigation.PushAsync(new PlantView(plant));
-            Plants.SelectedItem = null;
-
-
-           
+            Plants.SelectedItem = null;           
         }
     }
 }

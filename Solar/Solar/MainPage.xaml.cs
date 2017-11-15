@@ -56,8 +56,10 @@ namespace Solar
                 app.Username = UserName.Text;
                 await Application.Current.SavePropertiesAsync();
                 // PlantList plant = new PlantList();
-                await Navigation.PushAsync(new PlantList(tokenobj.Item1));
-             
+                // await Navigation.PushAsync(new PlantList(tokenobj.Item1));
+                // testing plantView
+                await Navigation.PushAsync(new PlantView(null));
+
             }
             else
             {

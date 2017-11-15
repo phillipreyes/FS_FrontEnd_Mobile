@@ -28,7 +28,7 @@ namespace Solar.Controller
         }
         public async Task<Tuple<TokenDTO, bool>> TryLogin()
         {
-            //return authenication to be returned. 
+            // return authenication to be returned. 
 
             
             bool isAuth = false;
@@ -59,8 +59,7 @@ namespace Solar.Controller
                 Debug.WriteLine("-------------before status code------------");
                 Debug.WriteLine(response);
                 Debug.WriteLine("");
-                
-                
+                                               
                 if (response.IsSuccessStatusCode)
                 {
                     isAuth = true;
