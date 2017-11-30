@@ -52,6 +52,7 @@ namespace Solar
             Plants.ItemsSource = plantList;
            
         }
+        
         private async void Plants_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             if (Plants.SelectedItem == null)
@@ -60,8 +61,10 @@ namespace Solar
             
             var plant = e.SelectedItem as PlantInfo;
             app.CurrentPlant = plant.PlantName;
-            await Navigation.PushAsync(new PlantView(plant));
+            // await Navigation.PushAsync(new PlantView(plant));
+            await Navigation.PushAsync(new PlantView(plant, userTokenInfo));
             Plants.SelectedItem = null;           
         }
+        
     }
 }

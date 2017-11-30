@@ -38,12 +38,14 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controller\GetPlantData.cs" />
     <Compile Include="Controller\GetPlantList.cs" />
     <Compile Include="Controller\Login.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model\GenCalender.cs" />
+    <Compile Include="Model\PlantDataViewModel.cs" />
     <Compile Include="Model\PlantInfo.cs" />
     <Compile Include="Model\PlantListClass.cs" />
     <Compile Include="Model\TokenDTO.cs" />

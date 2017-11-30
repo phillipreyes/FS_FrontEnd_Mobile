@@ -17,8 +17,7 @@ namespace Solar.Controller
         //testss
         HttpClient client;
         private User User;
-        //private List<PlantDTO> PlantItems;
-        private List<PlantInfo> PlantItems;
+        //private List<PlantDTO> PlantItems;        
         private TokenDTO tokenobj;
         public Login(User user)
         {

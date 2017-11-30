@@ -26,14 +26,19 @@ namespace Solar.Controller
         {
             var client2 = new HttpClient();
             plantList = new List<PlantInfo>();
-            
-            var url = "http://fsdevweb.azurewebsites.net/api/plant_authorizationapi/authorizations/plants?UserName=testuser1@fsweb.com";
+
+            // var url = "http://fsdevweb.azurewebsites.net/api/plant_authorizationapi/authorizations/plants?UserName=testuser1@fsdev.com";
+            var url = "http://fsdevweb.azurewebsites.net/api/plant_authorizationapi/authorizations/plants?UserName="  + tokenInfo.userName;
             client2.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", tokenInfo.access_token);
             var response =  client2.GetAsync(url).Result;
             if (response.IsSuccessStatusCode)
             {
                 plantList = JsonConvert.DeserializeObject<List<PlantInfo>>(response.Content.ReadAsStringAsync().Result);
-                
+                Debug.WriteLine("\n\n\n!******SUCCESS******!\n\n\n");
+            }
+            else
+            {
+                Debug.WriteLine("\n\n\n!******FAILURE******!\n\n\n");
             }
             return plantList;
         }

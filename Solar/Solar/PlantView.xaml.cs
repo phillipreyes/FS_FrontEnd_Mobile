@@ -13,13 +13,13 @@ namespace Solar
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PlantView : ContentPage
     {        
-        public PlantView(PlantInfo info)
+        public PlantView(PlantInfo info, TokenDTO td)
         {
             InitializeComponent();
 
             // BindingContext = info;
-            // GenCalender gc = new GenCalender();
-            GenCalender gc = new GenCalender(4141);
+            GenCalender gc = new GenCalender(info, td);
+            // GenCalender gc = new GenCalender(4141, );
             DateTime day1 = new DateTime(2017, 9, 1);
             DateTime day2 = new DateTime(2017, 9, 1);
             // gc.GenerateDataModel(day1, day2);

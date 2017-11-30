@@ -108,12 +108,16 @@ C:\Users\Cole\Documents\GitHub\FS_FrontEnd_Mobile\Solar\Solar\obj\Debug\Solar.Pl
 C:\Users\Cole\Documents\GitHub\FS_FrontEnd_Mobile\Solar\Solar\obj\Debug\Solar.RequestAccount.xaml.g.cs
 C:\Users\Cole\Documents\GitHub\FS_FrontEnd_Mobile\Solar\Solar\obj\Debug\Solar.dll
 C:\Users\Cole\Documents\GitHub\FS_FrontEnd_Mobile\Solar\Solar\obj\Debug\Solar.pdb
-C:\Users\Cole\Documents\GitHub\FS_FrontEnd_Mobile\Solar\Solar\obj\Debug\Solar.csprojResolveAssemblyReference.cache
 C:\Users\Cole\Documents\GitHub\FS_FrontEnd_Mobile\Solar\Solar\bin\Debug\OxyPlot.dll
 C:\Users\Cole\Documents\GitHub\FS_FrontEnd_Mobile\Solar\Solar\bin\Debug\OxyPlot.Xamarin.Forms.dll
 C:\Users\Cole\Documents\GitHub\FS_FrontEnd_Mobile\Solar\Solar\bin\Debug\OxyPlot.pdb
 C:\Users\Cole\Documents\GitHub\FS_FrontEnd_Mobile\Solar\Solar\bin\Debug\OxyPlot.xml
 C:\Users\Cole\Documents\GitHub\FS_FrontEnd_Mobile\Solar\Solar\bin\Debug\OxyPlot.Xamarin.Forms.pdb
 C:\Users\Cole\Documents\GitHub\FS_FrontEnd_Mobile\Solar\Solar\bin\Debug\OxyPlot.Xamarin.Forms.xml
+C:\Users\Cole\Documents\GitHub\FS_FrontEnd_Mobile\Solar\Solar\obj\Debug\Solar.csprojResolveAssemblyReference.cache
+C:\Users\Cole\Documents\GitHub\FS_FrontEnd_Mobile\Solar\Solar\obj\Debug\Solar.dll.mdb
+C:\Users\Cole\Documents\GitHub\FS_FrontEnd_Mobile\Solar\Solar\bin\Debug\Solar.dll.mdb
+C:\Users\Cole\Documents\GitHub\FS_FrontEnd_Mobile\Solar\Solar\obj\Debug\Solar.dll.mdb
+C:\Users\Cole\Documents\GitHub\FS_FrontEnd_Mobile\Solar\Solar\bin\Debug\Solar.dll.mdb
 C:\Users\Cole\Documents\GitHub\FS_FrontEnd_Mobile\Solar\Solar\obj\Debug\Solar.dll.mdb
 C:\Users\Cole\Documents\GitHub\FS_FrontEnd_Mobile\Solar\Solar\bin\Debug\Solar.dll.mdb
