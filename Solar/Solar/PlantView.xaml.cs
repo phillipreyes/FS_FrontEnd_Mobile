@@ -18,16 +18,13 @@ namespace Solar
             InitializeComponent();
 
             // BindingContext = info;
+            // Pass Plant information selected from Plant List Page to the GenCalendar object
+            // so that the generation calendar object is working with the correct plant
+            // creating this object automatically generates the generation calendar
+            // currently it always generates for September 1st 2017
             GenCalender gc = new GenCalender(info, td);
-            // GenCalender gc = new GenCalender(4141, );
-            DateTime day1 = new DateTime(2017, 9, 1);
-            DateTime day2 = new DateTime(2017, 9, 1);
-            // gc.GenerateDataModel(day1, day2);
+            // Setup the Generaton Calendar to be used by the XAML Plant View Page
             BindingContext = gc;
-
-            // var app = Application.Current as App;
-            // ContentPage.TitleProperty = app.CurrentPlant;
-            // SelectedPlant.Text = info.PlantName;            
         }
     }
 }

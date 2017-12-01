@@ -60,7 +60,6 @@
     <Compile Include="RequestAccount.xaml.cs">
       <DependentUpon>RequestAccount.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Structure\PlantInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainPage.xaml">

@@ -12,6 +12,7 @@ using Newtonsoft.Json;
 
 namespace Solar.Controller
 {
+    // Retrieves the Generation Calendar Data 
     public class GetPlantData
     {
         private HttpClient client;
@@ -28,11 +29,13 @@ namespace Solar.Controller
         public List<List<PlantDataViewModel>>GetGenerationCalendarData()
         {
             var client2 = new HttpClient();
-            // var url = "http://fsdevweb.azurewebsites.net/api/plantapi/plants/data?ID=4141&StartDate=9/1/2017&EndDate=9/5/2017";
+            // url of web service, including a PlantID
             var url = "http://fsdevweb.azurewebsites.net/api/plantapi/plants/data?ID=" + plantID + "&StartDate=9/1/2017&EndDate=9/5/2017";
             client2.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", tokenInfo.access_token);
+            // HTTP Response including Generation Calendar Data
             var response2 = client2.GetAsync(url).Result;
-
+            // Deserialize into a List of Lists of PlantDataViewModel
+            // The outer list is days and the inner list is readtimes, organizes by earliest to latest time
             var ListOfDays = JsonConvert.DeserializeObject<List<List<PlantDataViewModel>>>(response2.Content.ReadAsStringAsync().Result);
             foreach (List<PlantDataViewModel> DataObjectList in ListOfDays)
             {

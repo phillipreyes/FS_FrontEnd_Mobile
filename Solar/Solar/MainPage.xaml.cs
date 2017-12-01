@@ -11,10 +11,9 @@ using Xamarin.Forms;
 
 namespace Solar
 {
+    // Page to log into the application
     public partial class MainPage : ContentPage
-    {
-        // private bool isAuthen = false;
-      
+    {      
         public MainPage()
         {
             InitializeComponent();
@@ -22,26 +21,25 @@ namespace Solar
             BindingContext = Application.Current;
         }
 
-        
+        // Login button that attempts logging in when pressed
         private async void Login_Clicked(object sender, EventArgs e)
         {
             Tuple<TokenDTO, bool> tokenobj ;
             User user = new User();
-            // auto-fill working login for quicker testing
-            
+            // auto-fill working login for quicker testing            
             // user.email = "testuser1@fsweb.com";
-            user.email = "testuser1@fsdev.com";
-            user.password = "P@ssw0rd";
-            user.grant_type = "password";
-            
-            // user.email = UserName.Text;
-            // user.password = Password.Text;
+            // user.email = "testuser1@fsdev.com";
+            // user.password = "P@ssw0rd";
             // user.grant_type = "password";
-            // Create the login object
+            
+            user.email = UserName.Text;
+            user.password = Password.Text;
+            user.grant_type = "password";
+            // Create the Login object
             Login log = new Login(user);
             Login.IsEnabled = false;            
            
-            // Use TryLogin method of our login object
+            // Use TryLogin method of our Login object
             // actual logging in
             tokenobj =  await log.TryLogin();
             Debug.WriteLine("returned = " + tokenobj.Item2);
@@ -51,11 +49,11 @@ namespace Solar
                 Login.IsEnabled = true;      
                 Warning.Text = "";
                 Warning.TextColor = Color.Black;
-                var app = Application.Current as App;
 
-                app.Username = UserName.Text;
                 await Application.Current.SavePropertiesAsync();
                 // redirect to the Plant List Page
+                // giving it the authorization token it recieved from logging in
+                // authorization token needed in all future data requests from the Web API
                 await Navigation.PushAsync(new PlantList(tokenobj.Item1));
             }
             else

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Solar.Model
 {
+    // Object to represent a user from text fields of login page
     class User
     {
         public string email { get; set; }

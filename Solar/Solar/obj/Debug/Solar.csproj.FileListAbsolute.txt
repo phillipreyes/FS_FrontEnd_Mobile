@@ -119,5 +119,3 @@ C:\Users\Cole\Documents\GitHub\FS_FrontEnd_Mobile\Solar\Solar\obj\Debug\Solar.dl
 C:\Users\Cole\Documents\GitHub\FS_FrontEnd_Mobile\Solar\Solar\bin\Debug\Solar.dll.mdb
 C:\Users\Cole\Documents\GitHub\FS_FrontEnd_Mobile\Solar\Solar\obj\Debug\Solar.dll.mdb
 C:\Users\Cole\Documents\GitHub\FS_FrontEnd_Mobile\Solar\Solar\bin\Debug\Solar.dll.mdb
-C:\Users\Cole\Documents\GitHub\FS_FrontEnd_Mobile\Solar\Solar\obj\Debug\Solar.dll.mdb
-C:\Users\Cole\Documents\GitHub\FS_FrontEnd_Mobile\Solar\Solar\bin\Debug\Solar.dll.mdb
