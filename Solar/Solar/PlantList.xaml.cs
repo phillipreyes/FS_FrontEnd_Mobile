@@ -15,6 +15,7 @@ using Xamarin.Forms.Xaml;
 
 namespace Solar
 {
+    // Lists the plants that a user is authorized to view    
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PlantList : ContentPage
     {
@@ -23,48 +24,42 @@ namespace Solar
         public PlantList(TokenDTO userInfo)
         {   
             InitializeComponent();
-           //BindingContext = Application.Current;
+            BindingContext = Application.Current;            
             
-           /* var plantNames = new List<PlantInfo>
-            {
-                new PlantInfo {PlantName = "First Plant", Id = "temp"},
-                new PlantInfo {PlantName = "Second Plant", Id = "temp"},
-                new PlantInfo {PlantName = "Third Plant", Id = "temp3"}
-            };*/
-            
-           userTokenInfo = userInfo;
+            // Page's title and token information
+            userTokenInfo = userInfo;
             Title = "Plant List";                    
-            var app = Application.Current as App;
-            //plantNames.Add(new PlantInfo { PlantName = app.Username });
-
-                    }
+        }
         protected override void OnAppearing()
         {
             GetPlantList getplantInfo = new GetPlantList(userTokenInfo);
+            // Debugging messages
             Debug.WriteLine("\n\nGETTING PLANTLIST\n\n");
 
-            plantList = getplantInfo.getPLants();
+            // List holding each Plant Information Object is created
+            plantList = getplantInfo.getPlants();
             foreach (PlantInfo x in plantList)
             {
                 Debug.WriteLine("ID : " + x.Id + "\nPlantName : " + x.PlantName);
             }
             Debug.WriteLine("Done");
-            Plants.ItemsSource = plantList;
-           
+
+            // Setup the page's display to use plantList
+            Plants.ItemsSource = plantList;           
         }
+        
         private async void Plants_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
+            // if nothing selected don't run any coe
             if (Plants.SelectedItem == null)
                 return;
-            var app = Application.Current as App;
             
+            // Otherwise, pass the Selected Plant's Information to the Plant View XAML Page
             var plant = e.SelectedItem as PlantInfo;
-            app.CurrentPlant = plant.PlantName;
-            await Navigation.PushAsync(new PlantView(plant));
-            Plants.SelectedItem = null;
-
-
-           
+            await Navigation.PushAsync(new PlantView(plant, userTokenInfo));
+            // if go back to plant page ensures previously selected item is already selected
+            Plants.SelectedItem = null;           
         }
+        
     }
 }

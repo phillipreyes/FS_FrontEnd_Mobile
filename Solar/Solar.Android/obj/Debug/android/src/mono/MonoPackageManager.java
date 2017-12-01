@@ -101,6 +101,12 @@ class MonoPackageManager_Resources {
 		"Solar.Android.dll",
 		"FormsViewGroup.dll",
 		"Newtonsoft.Json.dll",
+		"OxyPlot.dll",
+		"OxyPlot.Xamarin.Android.dll",
+		"OxyPlot.Xamarin.Forms.dll",
+		"OxyPlot.Xamarin.Forms.Platform.Android.dll",
+		"System.Net.Http.Extensions.dll",
+		"System.Net.Http.Primitives.dll",
 		"Xamarin.Android.Support.Animated.Vector.Drawable.dll",
 		"Xamarin.Android.Support.Design.dll",
 		"Xamarin.Android.Support.v4.dll",
@@ -117,5 +123,5 @@ class MonoPackageManager_Resources {
 	};
 	public static final String[] Dependencies = new String[]{
 	};
-	public static final String ApiPackageName = "Mono.Android.Platform.ApiLevel_23";
+	public static final String ApiPackageName = "Mono.Android.Platform.ApiLevel_25";
 }
