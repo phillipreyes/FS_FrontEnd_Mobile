@@ -9,6 +9,7 @@ using Xamarin.Forms.Xaml;
 
 namespace Solar
 {
+    // Unimplemented Placeholder class
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RequestAccount : ContentPage
     {

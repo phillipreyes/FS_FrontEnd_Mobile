@@ -11,8 +11,8 @@
 namespace Solar {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Reyes\\Dropbox\\School\\2017 2Fall\\CSE 486 Capstone 2\\Project\\Solar\\Solar\\S" +
-        "olar\\Solar\\RequestAccount.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Cole\\Documents\\GitHub\\FS_FrontEnd_Mobile\\Solar\\Solar\\RequestAccount.xaml" +
+        "")]
     public partial class RequestAccount : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

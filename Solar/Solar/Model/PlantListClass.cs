@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Solar.Model
 {
+    // Object simply puttig a list of PlantInfos as a single object
     public class PlantListClass
     {
         public List<PlantInfo> PlantName { get; set; }
